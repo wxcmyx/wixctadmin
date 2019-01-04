@@ -77,8 +77,7 @@ public class BaseInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
         OptionVo ov = optionService.getOptionByName("site_record");
-        //一些工具类和公共方法
-        httpServletRequest.setAttribute("commons", commons);
+        httpServletRequest.setAttribute("commons", commons);//一些工具类和公共方法
         httpServletRequest.setAttribute("option", ov);
         httpServletRequest.setAttribute("adminCommons", adminCommons);
     }

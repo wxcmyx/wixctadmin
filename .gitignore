@@ -10,3 +10,4 @@ gen
 /logs/
 /target/
 /upload/
+/src/main/resources/application-prod.properties
