@@ -41,7 +41,7 @@ public class AsyncTest {
             Thread.sleep(1000);
         }
         long end = System.currentTimeMillis();
-        System.out.println("任务全部完成，总耗时：" + (end - start) + "毫秒");
+        System.out.println("任务全部完成，总耗时：" + (end - start)/1000 + "秒");
     }
 
 

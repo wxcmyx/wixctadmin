@@ -31,7 +31,7 @@ public class IndexControllerTest {
     @Ignore
     public void index() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("")).andExpect(MockMvcResultMatchers.status().isOk());
-
+        System.out.println("!!!!!!!!!");
     }
 
 }

@@ -60,7 +60,7 @@ public class IndexController extends BaseController {
      */
     @GetMapping(value = "/")
     public String index(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
-        return this.index(request, 1, limit);
+        return "forward:admin";
     }
 
     /**
